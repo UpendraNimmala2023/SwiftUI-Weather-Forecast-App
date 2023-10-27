@@ -9,3 +9,6 @@ Screen shots
 <img width="521" alt="Screenshot 2023-10-26 at 11 43 22 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/b0dfc491-a1a0-4c44-a721-f11d751e6365">
 <img width="521" alt="Screenshot 2023-10-26 at 11 43 11 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/b09c4fb7-0dcd-426d-999c-d1b87c6d37d5">
 
+How to Work with the Source
+In order to get Weather app to work, you need to put your worldweatheronline secret key on the AppConstants.swift file
+static let apiKey = "Your world weather online API key"
