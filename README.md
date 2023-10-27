@@ -4,7 +4,6 @@ The SwiftUI Weather app, allow users get the current weather for a particular lo
 
 
 Screen shots
-<img width="521" alt="Screenshot 2023-10-26 at 11 43 51 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/23761f01-976a-488a-80b5-ad2c0754372a">
 <img width="521" alt="Screenshot 2023-10-26 at 11 43 39 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/7b60460d-14d7-4679-8a70-271abd611678">
 <img width="521" alt="Screenshot 2023-10-26 at 11 43 29 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/f08782af-9f88-42b9-a04a-59af8c38ad2d">
 <img width="521" alt="Screenshot 2023-10-26 at 11 43 22 PM" src="https://github.com/UpendraNimmala2023/SwiftUI-Weather-Forecast-App/assets/135559739/b0dfc491-a1a0-4c44-a721-f11d751e6365">
