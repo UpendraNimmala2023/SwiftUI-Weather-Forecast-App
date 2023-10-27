@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		105CBEB92AEB50D3000E2C5F /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBEB82AEB50D3000E2C5F /* WeatherAppApp.swift */; };
-		105CBEBB2AEB50D3000E2C5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBEBA2AEB50D3000E2C5F /* ContentView.swift */; };
+		105CBEBB2AEB50D3000E2C5F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBEBA2AEB50D3000E2C5F /* MainView.swift */; };
 		105CBEBD2AEB50D4000E2C5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105CBEBC2AEB50D4000E2C5F /* Assets.xcassets */; };
 		105CBEC02AEB50D4000E2C5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105CBEBF2AEB50D4000E2C5F /* Preview Assets.xcassets */; };
 		105CBECA2AEB50D4000E2C5F /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBEC92AEB50D4000E2C5F /* WeatherAppTests.swift */; };
 		105CBED42AEB50D5000E2C5F /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBED32AEB50D5000E2C5F /* WeatherAppUITests.swift */; };
 		105CBED62AEB50D5000E2C5F /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBED52AEB50D5000E2C5F /* WeatherAppUITestsLaunchTests.swift */; };
+		105CBF292AEB633D000E2C5F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105CBF282AEB633D000E2C5F /* AppConstants.swift */; };
+		105CBF2C2AEB6374000E2C5F /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 105CBF2B2AEB6374000E2C5F /* Logging */; };
+		105CBF2F2AEB638D000E2C5F /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 105CBF2E2AEB638D000E2C5F /* Swinject */; };
+		105CBF322AEB63A1000E2C5F /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 105CBF312AEB63A1000E2C5F /* SimpleToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		105CBEB52AEB50D3000E2C5F /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105CBEB82AEB50D3000E2C5F /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
-		105CBEBA2AEB50D3000E2C5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		105CBEBA2AEB50D3000E2C5F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		105CBEBC2AEB50D4000E2C5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105CBEBF2AEB50D4000E2C5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		105CBEC52AEB50D4000E2C5F /* WeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,7 @@
 		105CBECF2AEB50D4000E2C5F /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		105CBED32AEB50D5000E2C5F /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		105CBED52AEB50D5000E2C5F /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		105CBF282AEB633D000E2C5F /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105CBF2C2AEB6374000E2C5F /* Logging in Frameworks */,
+				105CBF322AEB63A1000E2C5F /* SimpleToast in Frameworks */,
+				105CBF2F2AEB638D000E2C5F /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +102,8 @@
 		105CBEB72AEB50D3000E2C5F /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				105CBEB82AEB50D3000E2C5F /* WeatherAppApp.swift */,
-				105CBEBA2AEB50D3000E2C5F /* ContentView.swift */,
+				105CBF272AEB62C7000E2C5F /* App */,
+				105CBEBA2AEB50D3000E2C5F /* MainView.swift */,
 				105CBEBC2AEB50D4000E2C5F /* Assets.xcassets */,
 				105CBEBE2AEB50D4000E2C5F /* Preview Content */,
 			);
@@ -127,6 +135,15 @@
 			path = WeatherAppUITests;
 			sourceTree = "<group>";
 		};
+		105CBF272AEB62C7000E2C5F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				105CBF282AEB633D000E2C5F /* AppConstants.swift */,
+				105CBEB82AEB50D3000E2C5F /* WeatherAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +160,11 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				105CBF2B2AEB6374000E2C5F /* Logging */,
+				105CBF2E2AEB638D000E2C5F /* Swinject */,
+				105CBF312AEB63A1000E2C5F /* SimpleToast */,
+			);
 			productName = WeatherApp;
 			productReference = 105CBEB52AEB50D3000E2C5F /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +237,11 @@
 				Base,
 			);
 			mainGroup = 105CBEAC2AEB50D3000E2C5F;
+			packageReferences = (
+				105CBF2A2AEB6374000E2C5F /* XCRemoteSwiftPackageReference "swift-log" */,
+				105CBF2D2AEB638D000E2C5F /* XCRemoteSwiftPackageReference "Swinject" */,
+				105CBF302AEB63A1000E2C5F /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
 			productRefGroup = 105CBEB62AEB50D3000E2C5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105CBEBB2AEB50D3000E2C5F /* ContentView.swift in Sources */,
+				105CBEBB2AEB50D3000E2C5F /* MainView.swift in Sources */,
+				105CBF292AEB633D000E2C5F /* AppConstants.swift in Sources */,
 				105CBEB92AEB50D3000E2C5F /* WeatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +611,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		105CBF2A2AEB6374000E2C5F /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		105CBF2D2AEB638D000E2C5F /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		105CBF302AEB63A1000E2C5F /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		105CBF2B2AEB6374000E2C5F /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 105CBF2A2AEB6374000E2C5F /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		105CBF2E2AEB638D000E2C5F /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 105CBF2D2AEB638D000E2C5F /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		105CBF312AEB63A1000E2C5F /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 105CBF302AEB63A1000E2C5F /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 105CBEAD2AEB50D3000E2C5F /* Project object */;
 }
