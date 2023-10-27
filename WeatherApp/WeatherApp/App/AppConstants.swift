@@ -9,7 +9,7 @@ import Foundation
 enum AppConstants {
     enum Api {
         static let apiUrl = URL(string: "https://api.worldweatheronline.com/premium/v1")!
-        static let apiKey = "e0e764a279ba4fefaeb12922232710"
+        static let apiKey = "APIKEY"
 
         enum QueryKey: String {
             case apiKey = "key"
