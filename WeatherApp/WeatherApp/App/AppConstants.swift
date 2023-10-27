@@ -10,7 +10,6 @@ enum AppConstants {
     enum Api {
         static let apiUrl = URL(string: "https://api.worldweatheronline.com/premium/v1")!
         static let apiKey = "APIKEY"
-
         enum QueryKey: String {
             case apiKey = "key"
             case searchString = "q"
