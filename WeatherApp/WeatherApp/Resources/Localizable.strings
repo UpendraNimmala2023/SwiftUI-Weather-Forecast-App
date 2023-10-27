@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  WeatherApp
+
+  Created by Upendra Nimmala on 10/26/23.
+  
+*/
+"search_location_placeholder" = "Search for a location";
+"weather_title" = "Weather";
+"done" = "Done";
+"feels_like" = "Feels like %@";
+"cancel" = "Cancel";
+"add" = "Add";
+"no_search_results" = "No Results";
